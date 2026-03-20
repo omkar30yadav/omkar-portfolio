@@ -8,13 +8,13 @@ import { S } from "./styles.js";
 /* ─── Main Component ────────────────────────────────────────────────────── */
 
 export default function Portfolio() {
-  const [filter,    setFilter]    = useState("All");
+  const [filter, setFilter] = useState("All");
   const [activeNav, setActiveNav] = useState("Home");
-  const [menuOpen,  setMenuOpen]  = useState(false);
-  const [typed,     setTyped]     = useState("");
-  const [form,      setForm]      = useState({ name: "", email: "", msg: "" });
-  const [sent,      setSent]      = useState(false);
-  const [animate,   setAnimate]   = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [typed, setTyped] = useState("");
+  const [form, setForm] = useState({ name: "", email: "", msg: "" });
+  const [sent, setSent] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   /* Typewriter effect */
   const rIdx = useRef(0), cIdx = useRef(0), del = useRef(false);
@@ -138,12 +138,12 @@ export default function Portfolio() {
         <div style={S.heroRight}>
           <div style={S.blob} />
           <div style={S.avaRing}>
-            <span style={S.avaTxt}>OY</span>
+            <img src="/avatar.png" alt="Omkar Yadav" style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }} />
           </div>
-          <div style={S.floatBadge(8,    null, null, -10, "#1a6c8c")}>WordPress ✓</div>
-          <div style={S.floatBadge(null,  14,  null, -14, "#a04800")}>Django ✓</div>
-          <div style={S.floatBadge(null,  10,  -14, null, "#8a5a00")}>Java ✓</div>
-          <div style={S.floatBadge(12,   null,  -10, null, "#2a7a2a")}>MERN ✓</div>
+          <div style={S.floatBadge(8, null, null, -10, "#1a6c8c")}>WordPress ✓</div>
+          <div style={S.floatBadge(null, 14, null, -14, "#a04800")}>Django ✓</div>
+          <div style={S.floatBadge(null, 10, -14, null, "#8a5a00")}>Java ✓</div>
+          <div style={S.floatBadge(12, null, -10, null, "#2a7a2a")}>MERN ✓</div>
         </div>
       </section>
 
@@ -303,9 +303,9 @@ export default function Portfolio() {
 
               <div style={S.socials}>
                 {[
-                  ["GitHub",   PERSONAL.github],
+                  ["GitHub", PERSONAL.github],
                   ["LinkedIn", PERSONAL.linkedin],
-                  ["Twitter",  PERSONAL.twitter],
+                  ["Twitter", PERSONAL.twitter],
                 ].map(([label, href]) => (
                   <a key={label} href={href} target="_blank" rel="noreferrer"
                     className="soc-link" style={S.socLink}>

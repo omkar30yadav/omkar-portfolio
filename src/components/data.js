@@ -56,7 +56,7 @@ export const PROJECTS = [
     id:    3,
     title: "TechMate.Blog",
     tag:   "WordPress",
-    year:  "2024",
+    year:  "2025",
     type:  "Personal Project",
     desc:  "A technical blog deployed on WordPress with themes, plugins, categories, and media management. Configured on Hostinger with domain, hosting setup, and SEO basics.",
     tech:  ["WordPress", "PHP", "Hostinger", "SEO"],
