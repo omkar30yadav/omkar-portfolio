@@ -8,9 +8,9 @@ export const PERSONAL = {
   phone:    "+91 77150 78272",
   location: "Andheri East, Mumbai – 400093",
   availability: "Open to freelance & full‑time",
-  github:   "https://github.com/",       // ← add your URL
-  linkedin: "https://linkedin.com/in/",  // ← add your URL
-  twitter:  "https://twitter.com/",      // ← add your URL
+  github:   "https://github.com/omkar30yadav",       // ← add your URL
+  linkedin: "https://www.linkedin.com/in/omkar-yadav-b07b35232/",  // ← add your URL
+  twitter:  "https://x.com/30Haddi",      // ← add your URL
   bio: [
     "I'm Omkar Yadav, a web developer based in Mumbai, India. I work across multiple stacks — building everything from WordPress sites and blogs to full-stack applications with Django, Java, and the MERN stack.",
     "I'm currently pursuing my Master of Computer Applications (MCA) at the University of Mumbai, and I hold a B.Sc. in Information Technology from the same university.",
