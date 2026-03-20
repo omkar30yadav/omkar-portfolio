@@ -135,15 +135,48 @@ export default function Portfolio() {
         </div>
 
         {/* Avatar */}
-        <div style={S.heroRight}>
-          <div style={S.blob} />
-          <div style={S.avaRing}>
-            <img src="/avatar.png" alt="Omkar Yadav" style={{ width: "100%", height: "100%", borderRadius: "50%", objectFit: "cover" }} />
+        <div style={{
+          flex: "0 0 auto",
+          position: "relative",
+          width: 300,
+          height: 300,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+          {/* Blob behind */}
+          <div style={{
+            position: "absolute",
+            width: 280,
+            height: 280,
+            borderRadius: "42% 58% 54% 46% / 46% 40% 60% 54%",
+            background: "#fef3ee",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+          }} />
+
+          {/* Avatar circle on top */}
+          <div style={{
+            position: "relative",
+            zIndex: 1,
+            width: 180,
+            height: 180,
+            borderRadius: "50%",
+            border: "3px solid #fde0d0",
+            overflow: "hidden",
+            boxShadow: "0 10px 36px rgba(224,92,42,.14)",
+            animation: "floatY 4s ease-in-out infinite",
+          }}>
+            <img src="/avatar.png" alt="Omkar Yadav"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
-          <div style={S.floatBadge(8, null, null, -10, "#1a6c8c")}>WordPress ✓</div>
-          <div style={S.floatBadge(null, 14, null, -14, "#a04800")}>Django ✓</div>
-          <div style={S.floatBadge(null, 10, -14, null, "#8a5a00")}>Java ✓</div>
-          <div style={S.floatBadge(12, null, -10, null, "#2a7a2a")}>MERN ✓</div>
+
+          {/* Float badges */}
+          <div style={{ position: "absolute", top: 10, right: 0, background: "#fff", border: "1px solid #eee", borderRadius: 20, fontSize: 11, fontWeight: 600, color: "#1a6c8c", padding: "5px 11px", boxShadow: "0 4px 12px rgba(0,0,0,.07)", zIndex: 2 }}>WordPress ✓</div>
+          <div style={{ position: "absolute", bottom: 20, right: -10, background: "#fff", border: "1px solid #eee", borderRadius: 20, fontSize: 11, fontWeight: 600, color: "#a04800", padding: "5px 11px", boxShadow: "0 4px 12px rgba(0,0,0,.07)", zIndex: 2 }}>Django ✓</div>
+          <div style={{ position: "absolute", bottom: 10, left: -10, background: "#fff", border: "1px solid #eee", borderRadius: 20, fontSize: 11, fontWeight: 600, color: "#8a5a00", padding: "5px 11px", boxShadow: "0 4px 12px rgba(0,0,0,.07)", zIndex: 2 }}>Java ✓</div>
+          <div style={{ position: "absolute", top: 10, left: 0, background: "#fff", border: "1px solid #eee", borderRadius: 20, fontSize: 11, fontWeight: 600, color: "#2a7a2a", padding: "5px 11px", boxShadow: "0 4px 12px rgba(0,0,0,.07)", zIndex: 2 }}>MERN ✓</div>
         </div>
       </section>
 
