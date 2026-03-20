@@ -50,7 +50,7 @@ export const PROJECTS = [
     type:  "College Project",
     desc:  "A website for sports event and coaching registration designed for societies and corporate organisations, built with the Django framework and MySQL.",
     tech:  ["Django", "Python", "MySQL", "HTML", "CSS"],
-    link:  "#",
+    link:  "https://github.com/omkar30yadav/sportify",
   },
   {
     id:    3,
@@ -60,7 +60,7 @@ export const PROJECTS = [
     type:  "Personal Project",
     desc:  "A technical blog deployed on WordPress with themes, plugins, categories, and media management. Configured on Hostinger with domain, hosting setup, and SEO basics.",
     tech:  ["WordPress", "PHP", "Hostinger", "SEO"],
-    link:  "#",
+    link:  "techmate.blog",   // ← add your live/repo URL
   },
   {
     id:    4,
@@ -70,7 +70,7 @@ export const PROJECTS = [
     type:  "Personal Project",
     desc:  "An event photography and milestone celebration website built using React — featuring galleries, package listings, and a booking enquiry section.",
     tech:  ["React", "HTML", "CSS", "JavaScript"],
-    link:  "#",
+    link:  "https://moments-memories-xi.vercel.app/",
   },
 ];
 
