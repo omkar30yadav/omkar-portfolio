@@ -65,7 +65,7 @@ export const PROJECTS = [
   {
     id:    4,
     title: "Moments & Milestones",
-    tag:   "React",
+    tag:   "MERN Stack",
     year:  "2026",
     type:  "Personal Project",
     desc:  "An event photography and milestone celebration website built using React — featuring galleries, package listings, and a booking enquiry section.",
